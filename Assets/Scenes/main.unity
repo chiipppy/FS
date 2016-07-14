@@ -146,7 +146,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &329487928
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,10 +227,1405 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 329487928}
+  m_LocalRotation: {x: 0.34202018, y: 0, z: 0, w: 0.9396926}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1064649784}
+  m_RootOrder: 0
+--- !u!1 &737280275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 737280277}
+  - 114: {fileID: 737280276}
+  m_Layer: 0
+  m_Name: Faction Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &737280276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 737280275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8730eeb62a8c9914ab3eacadeee6e0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectionTexture: {fileID: 2800000, guid: 716ccbe73fcbaff4eb7c46ce1399a09d, type: 3}
+  groupList:
+  - {fileID: 1673526397}
+  - {fileID: 1303359285}
+  types: []
+--- !u!4 &737280277
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 737280275}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
+--- !u!1 &845552763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 845552769}
+  - 95: {fileID: 845552768}
+  - 82: {fileID: 845552767}
+  - 54: {fileID: 845552766}
+  - 114: {fileID: 845552765}
+  - 114: {fileID: 845552764}
+  m_Layer: 0
+  m_Name: BaseUnit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &845552764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 845552763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7ac92649f1b20429617ab213b6a770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Unit
+  maxHealth: 100
+  health: 100
+  group: 0
+  type:
+    name: Name
+    strengths: []
+    weaknesses: []
+  weapon:
+    fighterUnit: 0
+    attackRate: 0
+    attackRange: 0
+    attackDamage: 0
+    lookRange: 0
+    attackObj: {fileID: 0}
+    attackSphere: {fileID: 0}
+    lookSphere: {fileID: 0}
+  build:
+    builderUnit: 0
+    buildDist: 3
+    build: []
+    source: {fileID: 0}
+  anim:
+    manager: {fileID: 845552768}
+    state: 
+    idleAudio: {fileID: 0}
+    moveAudio: {fileID: 0}
+    gatherAudio: {fileID: 0}
+    buildAudio: {fileID: 0}
+    attackAudio: {fileID: 0}
+    source: {fileID: 845552767}
+    deathObject: {fileID: 0}
+  resource:
+    resourceUnit: 0
+    behaviour: []
+    source: {fileID: 0}
+    sourceIndex: 0
+    target: {fileID: 0}
+    manager: {fileID: 0}
+    nearestDropOff: {fileID: 0}
+  gui:
+    selectObjs: []
+    image: {fileID: 0}
+    type: Unit
+    select: {fileID: 0}
+    display: 0
+    onlyDisplayed: 0
+  ratio: []
+  techEffect: []
+  vision: {fileID: 0}
+  miniMap: {fileID: 0}
+  movement: {fileID: 0}
+  target: {fileID: 0}
+  targetPoint: {x: 0, y: 0, z: 0}
+  size: 1
+  targetType: 5
+  tState: 4
+--- !u!114 &845552765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 845552763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 907c1687b5023ca4a8ae5376bcb0dbbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  rotateSpeed: 0
+  target: {x: 0, y: 0, z: 0}
+  gridScript: {fileID: 0}
+  gridI: 0
+  myPath:
+    list: 
+    cost: 0
+    color: {r: 1, g: 1, b: 1, a: 1}
+    displayPath: 0
+  depth: 0
+  pathComplete: 0
+  pathing: {fileID: 0}
+  checkDist: 1
+  layer: 0
+--- !u!54 &845552766
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 845552763}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!82 &845552767
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 845552763}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!95 &845552768
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 845552763}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &845552769
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 845552763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+--- !u!1 &1064649782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1064649784}
+  - 114: {fileID: 1064649783}
+  m_Layer: 0
+  m_Name: CameraContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1064649783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1064649782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5340020de85e27d439ab4beab660c186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: {x: 10, y: 10}
+  modifier: 0
+  scrollMinMax: {x: 1, y: 1}
+  scrollSpeed: 1
+  cam: {fileID: 329487933}
+  scrollCur: 0
+  movementBorders:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  mouseBorders:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+--- !u!4 &1064649784
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1064649782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 329487933}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!1 &1303359285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1303359287}
+  - 114: {fileID: 1303359286}
+  m_Layer: 0
+  m_Name: FactionCreeps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1303359286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303359285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1b05d0b2933c74d9a2826bff7e5604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  relations:
+  - state: 3
+  - state: 3
+  unitList: []
+  buildingList: []
+  tech: []
+  color: {r: 0.78676474, g: 0.13305579, b: 0.28183097, a: 0}
+--- !u!4 &1303359287
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303359285}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+--- !u!1 &1419130794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1419130797}
+  - 114: {fileID: 1419130796}
+  - 114: {fileID: 1419130795}
+  - 114: {fileID: 1419130798}
+  m_Layer: 0
+  m_Name: Player Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1419130795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419130794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d539a52b3319043a95e69187d62b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceTypes:
+  - name: Gold
+    amount: 0
+    texture: {fileID: 0}
+  - name: Lumber
+    amount: 0
+    texture: {fileID: 0}
+  dropOffPoints: []
+  dropOffAmount: 0
+--- !u!114 &1419130796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419130794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dbb6762643027d4d940bb8bcf12599f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  group: 0
+  maxUnitSelect: 50
+  maxBuildingSelect: 50
+  maxTotalSelect: 100
+  selectTexture: {fileID: 0}
+  borderTexture: {fileID: 0}
+  borderSize: 3
+  windowRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  selectionRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  gridScript: {fileID: 0}
+  map: {fileID: 0}
+  groupM: {fileID: 0}
+  curSelected: []
+  curSelectedS: []
+  curBuildSelected: []
+  curBuildSelectedS: []
+  curSelectedLength: 0
+  curBuildSelectedLength: 0
+  guiManager: {fileID: 0}
+  placement: {fileID: 0}
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  selection:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!4 &1419130797
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419130794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+--- !u!114 &1419130798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1419130794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fb0125034ad7748851e400797de33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements: []
+  standardSize: {x: 1720, y: 1080}
+  unitGraphic:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  UColumnsXRows: {x: 10, y: 5}
+  unitBDisp: {x: 5, y: 10}
+  universalBuild: 0
+  buildButtonSize:
+    serializedVersion: 2
+    x: 50
+    y: 900
+    width: 75
+    height: 75
+  BColumnsXRows: {x: 10, y: 5}
+  buildingBDisp: {x: 80, y: 100}
+  resourceSize:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 100
+    height: 50
+  RColumnsXRows: {x: 10, y: 5}
+  resourceBDisp: {x: 80, y: 100}
+  miniMapSize:
+    serializedVersion: 2
+    x: 1520
+    y: 880
+    width: 200
+    height: 200
+  unitDescriptionLocation:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 100
+    height: 100
+  techDescriptionLocation:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 100
+    height: 100
+  buildingDescriptionLocation:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 100
+    height: 100
+  skin: {fileID: 11400000, guid: b0291239d370f22488a3f1b00387250d, type: 2}
+  group: {fileID: 0}
+  mouseOverGUI: 0
+  mouseOverUnitProduction: 0
+  unitProductionIndex: 0
+  mouseOverTechProduction: 0
+  techProductionIndex: 0
+  mouseOverBuildingProduction: 0
+  buildingProductionIndex: 0
+  lastState: 0
+--- !u!1 &1673526397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1673526399}
+  - 114: {fileID: 1673526398}
+  m_Layer: 0
+  m_Name: FactionSurvivors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1673526398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673526397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1b05d0b2933c74d9a2826bff7e5604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  relations:
+  - state: 3
+  - state: 3
+  unitList:
+  - obj: {fileID: 845552763}
+    cost: 
+    technologyEffect: 
+    technologyUpgrade: []
+    available: 0
+  buildingList: []
+  tech: []
+  color: {r: 0.20969753, g: 0.13305579, b: 0.78676474, a: 0}
+--- !u!4 &1673526399
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673526397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+--- !u!1 &1712480493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1712480495}
+  - 114: {fileID: 1712480494}
+  m_Layer: 0
+  m_Name: UGrid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1712480494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1712480493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e78d5fe4fbab47418c3f9e9f98f1155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grids:
+  - size: 10
+    grid:
+    - loc: {x: 0, y: 0, z: 0}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 010000000a000000
+      index: 0
+    - loc: {x: 1, y: 0, z: 0}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 020000000b000000
+      index: 1
+    - loc: {x: 2, y: 0, z: 0}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 01000000030000000c000000
+      index: 2
+    - loc: {x: 3, y: 0, z: 0}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 02000000040000000d000000
+      index: 3
+    - loc: {x: 4, y: 0, z: 0}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 03000000050000000e000000
+      index: 4
+    - loc: {x: 5, y: 0, z: 0}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 04000000060000000f000000
+      index: 5
+    - loc: {x: 6, y: 0, z: 0}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 050000000700000010000000
+      index: 6
+    - loc: {x: 7, y: 0, z: 0}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 060000000800000011000000
+      index: 7
+    - loc: {x: 8, y: 0, z: 0}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 070000000900000012000000
+      index: 8
+    - loc: {x: 9, y: 0, z: 0}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 0800000013000000
+      index: 9
+    - loc: {x: 0, y: 0, z: 1}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 0b00000014000000
+      index: 10
+    - loc: {x: 1, y: 0, z: 1}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 0a0000000c0000000100000015000000
+      index: 11
+    - loc: {x: 2, y: 0, z: 1}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 0b0000000d0000000200000016000000
+      index: 12
+    - loc: {x: 3, y: 0, z: 1}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 0c0000000e0000000300000017000000
+      index: 13
+    - loc: {x: 4, y: 0, z: 1}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 0d0000000f0000000400000018000000
+      index: 14
+    - loc: {x: 5, y: 0, z: 1}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 0e000000100000000500000019000000
+      index: 15
+    - loc: {x: 6, y: 0, z: 1}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 0f00000011000000060000001a000000
+      index: 16
+    - loc: {x: 7, y: 0, z: 1}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 1000000012000000070000001b000000
+      index: 17
+    - loc: {x: 8, y: 0, z: 1}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 1100000013000000080000001c000000
+      index: 18
+    - loc: {x: 9, y: 0, z: 1}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 12000000090000001d000000
+      index: 19
+    - loc: {x: 0, y: 0, z: 2}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 150000000a0000001e000000
+      index: 20
+    - loc: {x: 1, y: 0, z: 2}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 14000000160000000b0000001f000000
+      index: 21
+    - loc: {x: 2, y: 0, z: 2}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 15000000170000000c00000020000000
+      index: 22
+    - loc: {x: 3, y: 0, z: 2}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 16000000180000000d00000021000000
+      index: 23
+    - loc: {x: 4, y: 0, z: 2}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 17000000190000000e00000022000000
+      index: 24
+    - loc: {x: 5, y: 0, z: 2}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 180000001a0000000f00000023000000
+      index: 25
+    - loc: {x: 6, y: 0, z: 2}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 190000001b0000001000000024000000
+      index: 26
+    - loc: {x: 7, y: 0, z: 2}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 1a0000001c0000001100000025000000
+      index: 27
+    - loc: {x: 8, y: 0, z: 2}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 1b0000001d0000001200000026000000
+      index: 28
+    - loc: {x: 9, y: 0, z: 2}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 1c0000001300000027000000
+      index: 29
+    - loc: {x: 0, y: 0, z: 3}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 1f0000001400000028000000
+      index: 30
+    - loc: {x: 1, y: 0, z: 3}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 1e000000200000001500000029000000
+      index: 31
+    - loc: {x: 2, y: 0, z: 3}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 1f00000021000000160000002a000000
+      index: 32
+    - loc: {x: 3, y: 0, z: 3}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 2000000022000000170000002b000000
+      index: 33
+    - loc: {x: 4, y: 0, z: 3}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 2100000023000000180000002c000000
+      index: 34
+    - loc: {x: 5, y: 0, z: 3}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 2200000024000000190000002d000000
+      index: 35
+    - loc: {x: 6, y: 0, z: 3}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 23000000250000001a0000002e000000
+      index: 36
+    - loc: {x: 7, y: 0, z: 3}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 24000000260000001b0000002f000000
+      index: 37
+    - loc: {x: 8, y: 0, z: 3}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 25000000270000001c00000030000000
+      index: 38
+    - loc: {x: 9, y: 0, z: 3}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 260000001d00000031000000
+      index: 39
+    - loc: {x: 0, y: 0, z: 4}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 290000001e00000032000000
+      index: 40
+    - loc: {x: 1, y: 0, z: 4}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 280000002a0000001f00000033000000
+      index: 41
+    - loc: {x: 2, y: 0, z: 4}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 290000002b0000002000000034000000
+      index: 42
+    - loc: {x: 3, y: 0, z: 4}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 2a0000002c0000002100000035000000
+      index: 43
+    - loc: {x: 4, y: 0, z: 4}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 2b0000002d0000002200000036000000
+      index: 44
+    - loc: {x: 5, y: 0, z: 4}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 2c0000002e0000002300000037000000
+      index: 45
+    - loc: {x: 6, y: 0, z: 4}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 2d0000002f0000002400000038000000
+      index: 46
+    - loc: {x: 7, y: 0, z: 4}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 2e000000300000002500000039000000
+      index: 47
+    - loc: {x: 8, y: 0, z: 4}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 2f00000031000000260000003a000000
+      index: 48
+    - loc: {x: 9, y: 0, z: 4}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 30000000270000003b000000
+      index: 49
+    - loc: {x: 0, y: 0, z: 5}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 33000000280000003c000000
+      index: 50
+    - loc: {x: 1, y: 0, z: 5}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 3200000034000000290000003d000000
+      index: 51
+    - loc: {x: 2, y: 0, z: 5}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 33000000350000002a0000003e000000
+      index: 52
+    - loc: {x: 3, y: 0, z: 5}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 34000000360000002b0000003f000000
+      index: 53
+    - loc: {x: 4, y: 0, z: 5}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 35000000370000002c00000040000000
+      index: 54
+    - loc: {x: 5, y: 0, z: 5}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 36000000380000002d00000041000000
+      index: 55
+    - loc: {x: 6, y: 0, z: 5}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 37000000390000002e00000042000000
+      index: 56
+    - loc: {x: 7, y: 0, z: 5}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 380000003a0000002f00000043000000
+      index: 57
+    - loc: {x: 8, y: 0, z: 5}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 390000003b0000003000000044000000
+      index: 58
+    - loc: {x: 9, y: 0, z: 5}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 3a0000003100000045000000
+      index: 59
+    - loc: {x: 0, y: 0, z: 6}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 3d0000003200000046000000
+      index: 60
+    - loc: {x: 1, y: 0, z: 6}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 3c0000003e0000003300000047000000
+      index: 61
+    - loc: {x: 2, y: 0, z: 6}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 3d0000003f0000003400000048000000
+      index: 62
+    - loc: {x: 3, y: 0, z: 6}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 3e000000400000003500000049000000
+      index: 63
+    - loc: {x: 4, y: 0, z: 6}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 3f00000041000000360000004a000000
+      index: 64
+    - loc: {x: 5, y: 0, z: 6}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 4000000042000000370000004b000000
+      index: 65
+    - loc: {x: 6, y: 0, z: 6}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 4100000043000000380000004c000000
+      index: 66
+    - loc: {x: 7, y: 0, z: 6}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 4200000044000000390000004d000000
+      index: 67
+    - loc: {x: 8, y: 0, z: 6}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 43000000450000003a0000004e000000
+      index: 68
+    - loc: {x: 9, y: 0, z: 6}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 440000003b0000004f000000
+      index: 69
+    - loc: {x: 0, y: 0, z: 7}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 470000003c00000050000000
+      index: 70
+    - loc: {x: 1, y: 0, z: 7}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 46000000480000003d00000051000000
+      index: 71
+    - loc: {x: 2, y: 0, z: 7}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 47000000490000003e00000052000000
+      index: 72
+    - loc: {x: 3, y: 0, z: 7}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 480000004a0000003f00000053000000
+      index: 73
+    - loc: {x: 4, y: 0, z: 7}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 490000004b0000004000000054000000
+      index: 74
+    - loc: {x: 5, y: 0, z: 7}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 4a0000004c0000004100000055000000
+      index: 75
+    - loc: {x: 6, y: 0, z: 7}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 4b0000004d0000004200000056000000
+      index: 76
+    - loc: {x: 7, y: 0, z: 7}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 4c0000004e0000004300000057000000
+      index: 77
+    - loc: {x: 8, y: 0, z: 7}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 4d0000004f0000004400000058000000
+      index: 78
+    - loc: {x: 9, y: 0, z: 7}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 4e0000004500000059000000
+      index: 79
+    - loc: {x: 0, y: 0, z: 8}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 51000000460000005a000000
+      index: 80
+    - loc: {x: 1, y: 0, z: 8}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 5000000052000000470000005b000000
+      index: 81
+    - loc: {x: 2, y: 0, z: 8}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 5100000053000000480000005c000000
+      index: 82
+    - loc: {x: 3, y: 0, z: 8}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 5200000054000000490000005d000000
+      index: 83
+    - loc: {x: 4, y: 0, z: 8}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 53000000550000004a0000005e000000
+      index: 84
+    - loc: {x: 5, y: 0, z: 8}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 54000000560000004b0000005f000000
+      index: 85
+    - loc: {x: 6, y: 0, z: 8}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 55000000570000004c00000060000000
+      index: 86
+    - loc: {x: 7, y: 0, z: 8}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 56000000580000004d00000061000000
+      index: 87
+    - loc: {x: 8, y: 0, z: 8}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 57000000590000004e00000062000000
+      index: 88
+    - loc: {x: 9, y: 0, z: 8}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 580000004f00000063000000
+      index: 89
+    - loc: {x: 0, y: 0, z: 9}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 5b00000050000000
+      index: 90
+    - loc: {x: 1, y: 0, z: 9}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 5a0000005c00000051000000
+      index: 91
+    - loc: {x: 2, y: 0, z: 9}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 5b0000005d00000052000000
+      index: 92
+    - loc: {x: 3, y: 0, z: 9}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 5c0000005e00000053000000
+      index: 93
+    - loc: {x: 4, y: 0, z: 9}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 5d0000005f00000054000000
+      index: 94
+    - loc: {x: 5, y: 0, z: 9}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 5e0000006000000055000000
+      index: 95
+    - loc: {x: 6, y: 0, z: 9}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 5f0000006100000056000000
+      index: 96
+    - loc: {x: 7, y: 0, z: 9}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 600000006200000057000000
+      index: 97
+    - loc: {x: 8, y: 0, z: 9}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 610000006300000058000000
+      index: 98
+    - loc: {x: 9, y: 0, z: 9}
+      parent: 0
+      state: 0
+      unit: 0
+      children: 6200000059000000
+      index: 99
+    startLoc: {x: 0, y: 0, z: 0}
+    octileConnection: 1
+    nodeDist: 1
+    displayGrid: 0
+    displayLines: 0
+    displaceDown: 1
+    checkSlope: 0
+    slopeMax: 5
+    checkLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    displaceLayer:
+      serializedVersion: 2
+      m_Bits: 0
+  generate: 0
+  index: 0
+  pathfinding:
+    start: {x: 0, y: 0, z: 0}
+    end: {x: 0, y: 0, z: 0}
+    gridScript: {fileID: 0}
+    gridI: 0
+    myPath:
+      list: 
+      cost: 0
+      color: {r: 1, g: 1, b: 1, a: 1}
+      displayPath: 0
+    mGrid: []
+    index: 
+    generate: 0
+  selectionTexture: {fileID: 2800000, guid: 349e81cd9cb2b524f87ae272c078acc5, type: 3}
+--- !u!4 &1712480495
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1712480493}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!1 &1840387583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1840387585}
+  - 114: {fileID: 1840387584}
+  m_Layer: 0
+  m_Name: A*
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1840387584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840387583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda7e7abaab15f248bc06ecff0b878a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountOfThreads: 2
+--- !u!4 &1840387585
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1840387583}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+--- !u!1 &2060825058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2060825060}
+  - 114: {fileID: 2060825059}
+  m_Layer: 0
+  m_Name: MiniMap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2060825059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060825058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f20bbdafcca985147b2f259c972fd634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements: []
+  cameraElement:
+    size: {x: 0, y: 0}
+    image: {fileID: 0}
+    tag: 
+    tints:
+    - {r: 1, g: 1, b: 1, a: 1}
+    factionElement: 0
+    moveUp: 0
+    elementObj: []
+    elementTransform: []
+    elementMap: []
+    elementLoc: []
+    elementGroup: 
+    objAmount: 0
+  cam: {fileID: 0}
+  cameraController: {fileID: 0}
+  camZoomLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  background: {fileID: 0}
+  localBounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  realWorldBounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  fogTexture: {fileID: 0}
+  fogColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!4 &2060825060
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060825058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
